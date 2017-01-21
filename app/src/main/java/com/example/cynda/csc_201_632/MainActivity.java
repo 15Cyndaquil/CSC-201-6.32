@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try{
-                    outputTV.setText(runCraps(Integer.parseInt(inputET.getText().toString())));
+                    outputTV.setText("Number of Wins: "+runCraps(Integer.parseInt(inputET.getText().toString())));
                 }catch (Exception e){outputTV.setText("Invalid Input!");}
             }
         });
